@@ -1,0 +1,36 @@
+#edad -> Edad del paciente #genero -> Genero del paciente: 1 hombre, 0
+      mujer #ec -> Estado civil del paciente: 1 soltero, 2 casado, 3 divorciado
+      #ocupacion -> ¿A que se dedica?: 0 estudiante, 1 empleado, 2 ama de casa,
+      3 enfermera, 4 campesino, 5 medico, 6 ingeniero, 7 albañil, 8 docente, 9
+      administrativo, 10 chofer o operador, 11 guardia, 12 desempleado, 13
+      mecanico, 14 estilista, 15 veterinario, 16 comerciante, 17 carpintero, 18
+      abogado, 19 quimico, 20 diseñador grafico, 21 arquitecto, 22 psicologo, 23
+      petrolero #tresd -> Tiempo de residencia en su domicilio: mas de 5 años -
+      0, toda su vida - 1, otro - 2, mas de 2 años - 3, 1 año - 4, menos de un
+      año - 5 #sefvr -> ¿Se enferma seguido de las vias respiratorias?: 0 no, si
+      1 #ecaaqla -> en caso de que si, a que lo atribuye: a los cambios de
+      temperatura 0, a la contaminacion 1, alergias 2, no se enferm
+      frecuentemente 3, mala alimentacion 4 #cvcspeu -> cuantas vacuna covid se
+      puso: 1,2 y refuerzo - 0, 1 y 2 dosis - 1, no se vacuno - 2, 1 dosis - 3,
+      cansino - 4, moderna - 5 #uoafpc -> usted o alguien cercano padecio covid:
+      0 no, si 1 #ecarh -> en caso de que si, requirio hospitalización: 0 no, si
+      1 #eccoccl -> en casa cocinan o cocinaron con leña: 0 no, 1 #ecuoaf -> en
+      casa alguien o usted fuma: 0 alguien de la familia, no 1, yo 2 #esfhacap
+      -> en su familia, hay alguien con una enfermedad cronica: 0 ninguna,
+      cancer 1, Diabetes Mellitus 2, Enfermedad cardiaca 3, hipertension
+      arterial 4, EPOC 5, Osteoporosis 6, anemia 7, asma 8, IRC 9, neumonias 10,
+      enfermedad de la piel 11, bronquitis 12 #oapb -> origen del agua para
+      beber: 0 embotelladora local, embotelladora de marca 1, de la llave 2
+      #oapc -> origen del agua para cocinar: 0 embotelladora local,
+      embotelladora de marca 1, de la llave 2 #ecraca -> alguien con algun
+      padecimiento en relacion al agua: 0 ninguna, piedras en riñon 1,
+      insuficiencia renal 2, cancer de riñon 3, irritación de mucosas 4, quistes
+      renales 5 #cqvuve -> considera su vida estresante que lo ha afectado
+      laboral, social y personal: 0 no, 1 si #saonacctet -> siente ansiedad o
+      nerviosismo asi como deseos de comer todo el tiempo: 0 no, 1 si #ccsa ->
+      como considera su autoestima: 0 baja, 1 media, 2 alta #hpisa -> ultimos 6
+      meses ha perdido interes en actividades agradables: 0 no, 1 si, no se
+      habia puesto a pensar en eso 2 #scmn -> cansado mas de lo normal sin hacer
+      actividad fisica sin poder dormir: 0 no, 1 si #seacr -> su estado de animo
+      cambia repentinamente: 0 no, 1 si #paecda -> padece alguna enfermedad
+      cronica degenerativa: 0 no, 1 si

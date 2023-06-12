@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predictor Enfermedades Cronicas</title>
+    <link rel="stylesheet" href="indice.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div id="background-header">
+        <svg
+          id="visual"
+          viewBox="0 0 2000 150"
+          width="2000"
+          height="150"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <rect x="0" y="0" width="2000" height="150" fill="#ff0066"></rect>
+          <path
+            d="M0 38L37 51.8C74 65.7 148 93.3 222 95.3C296 97.3 370 73.7 444.2 62C518.3 50.3 592.7 50.7 666.8 63.5C741 76.3 815 101.7 889 108.5C963 115.3 1037 103.7 1111 92.3C1185 81 1259 70 1333.2 74.8C1407.3 79.7 1481.7 100.3 1555.8 107.3C1630 114.3 1704 107.7 1778 96C1852 84.3 1926 67.7 1963 59.3L2000 51L2000 151L1963 151C1926 151 1852 151 1778 151C1704 151 1630 151 1555.8 151C1481.7 151 1407.3 151 1333.2 151C1259 151 1185 151 1111 151C1037 151 963 151 889 151C815 151 741 151 666.8 151C592.7 151 518.3 151 444.2 151C370 151 296 151 222 151C148 151 74 151 37 151L0 151Z"
+            fill="#ff3b8a"
+            stroke-linecap="round"
+            stroke-linejoin="miter"
+          ></path>
+        </svg>
+      </div>
+      <div id="txt-header">
+        <h1>Enfermedades <span>crónicas</span></h1>
+      </div>
+    </header>
+    <main class="container-main">
+      <aside class="diseases-options">
+        <h1>Lista</h1>
+        <i class="fa-solid fa-list" style="color: #1a1920"></i>
+        <div class="item-disease">
+          <svg
+            id="visual"
+            viewBox="0 0 300 150"
+            width="300"
+            height="150"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+          >
+            <rect x="0" y="0" width="300" height="150" fill="#C62368"></rect>
+            <g fill="#f23882">
+              <circle r="41" cx="272" cy="114"></circle>
+              <circle r="18" cx="185" cy="115"></circle>
+              <circle r="17" cx="234" cy="29"></circle>
+              <circle r="38" cx="88" cy="18"></circle>
+              <circle r="30" cx="47" cy="106"></circle>
+              <circle r="30" cx="4" cy="25"></circle>
+            </g>
+          </svg>
+          <div class="layer-item diabetes"><h4>Diabetes</h4></div>
+        </div>
+        <div class="item-disease">
+          <svg
+            id="visual"
+            viewBox="0 0 300 150"
+            width="300"
+            height="150"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+          >
+            <rect x="0" y="0" width="300" height="150" fill="#F7770F"></rect>
+            <defs>
+              <linearGradient id="grad1_0" x1="50%" y1="0%" x2="100%" y2="100%">
+                <stop offset="10%" stop-color="#f7770f" stop-opacity="1"></stop>
+                <stop offset="90%" stop-color="#f7770f" stop-opacity="1"></stop>
+              </linearGradient>
+            </defs>
+            <defs>
+              <linearGradient id="grad2_0" x1="0%" y1="0%" x2="50%" y2="100%">
+                <stop offset="10%" stop-color="#f7770f" stop-opacity="1"></stop>
+                <stop offset="90%" stop-color="#f7770f" stop-opacity="1"></stop>
+              </linearGradient>
+            </defs>
+            <g transform="translate(300, 0)">
+              <path
+                d="M0 135C-18.7 134.4 -37.5 133.7 -51.7 124.7C-65.8 115.7 -75.4 98.4 -84.1 84.1C-92.9 69.9 -100.7 58.7 -109 45.2C-117.3 31.6 -126.2 15.8 -135 0L0 0Z"
+                fill="#ff9f0e"
+              ></path>
+            </g>
+            <g transform="translate(0, 150)">
+              <path
+                d="M0 -135C15.2 -124.7 30.4 -114.4 44 -106.2C57.6 -98.1 69.6 -92.2 84.1 -84.1C98.7 -76.1 115.8 -66 124.7 -51.7C133.6 -37.3 134.3 -18.6 135 0L0 0Z"
+                fill="#ff9f0e"
+              ></path>
+            </g>
+          </svg>
+          <div class="layer-item hipertension">
+            <h4>Hipertensión Arterial</h4>
+          </div>
+        </div>
+        <div class="item-disease">
+          <svg
+            id="visual"
+            viewBox="0 0 300 150"
+            width="300"
+            height="150"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+          >
+            <path
+              d="M0 30L4.5 34.5C9 39 18 48 27.2 48C36.3 48 45.7 39 54.8 37.7C64 36.3 73 42.7 82 44.7C91 46.7 100 44.3 109 44.3C118 44.3 127 46.7 136.2 46.3C145.3 46 154.7 43 163.8 40.3C173 37.7 182 35.3 191 36.7C200 38 209 43 218 44.2C227 45.3 236 42.7 245.2 42.3C254.3 42 263.7 44 272.8 43.8C282 43.7 291 41.3 295.5 40.2L300 39L300 0L295.5 0C291 0 282 0 272.8 0C263.7 0 254.3 0 245.2 0C236 0 227 0 218 0C209 0 200 0 191 0C182 0 173 0 163.8 0C154.7 0 145.3 0 136.2 0C127 0 118 0 109 0C100 0 91 0 82 0C73 0 64 0 54.8 0C45.7 0 36.3 0 27.2 0C18 0 9 0 4.5 0L0 0Z"
+              fill="#365cc2"
+            ></path>
+            <path
+              d="M0 45L4.5 48.5C9 52 18 59 27.2 58.2C36.3 57.3 45.7 48.7 54.8 48C64 47.3 73 54.7 82 57C91 59.3 100 56.7 109 56.3C118 56 127 58 136.2 57C145.3 56 154.7 52 163.8 49.7C173 47.3 182 46.7 191 48.3C200 50 209 54 218 55.3C227 56.7 236 55.3 245.2 54.8C254.3 54.3 263.7 54.7 272.8 54.2C282 53.7 291 52.3 295.5 51.7L300 51L300 37L295.5 38.2C291 39.3 282 41.7 272.8 41.8C263.7 42 254.3 40 245.2 40.3C236 40.7 227 43.3 218 42.2C209 41 200 36 191 34.7C182 33.3 173 35.7 163.8 38.3C154.7 41 145.3 44 136.2 44.3C127 44.7 118 42.3 109 42.3C100 42.3 91 44.7 82 42.7C73 40.7 64 34.3 54.8 35.7C45.7 37 36.3 46 27.2 46C18 46 9 37 4.5 32.5L0 28Z"
+              fill="#3e68d6"
+            ></path>
+            <path
+              d="M0 55L4.5 58.5C9 62 18 69 27.2 69.8C36.3 70.7 45.7 65.3 54.8 65.7C64 66 73 72 82 74C91 76 100 74 109 72.7C118 71.3 127 70.7 136.2 68.3C145.3 66 154.7 62 163.8 60.3C173 58.7 182 59.3 191 62.8C200 66.3 209 72.7 218 73.8C227 75 236 71 245.2 70C254.3 69 263.7 71 272.8 71.5C282 72 291 71 295.5 70.5L300 70L300 49L295.5 49.7C291 50.3 282 51.7 272.8 52.2C263.7 52.7 254.3 52.3 245.2 52.8C236 53.3 227 54.7 218 53.3C209 52 200 48 191 46.3C182 44.7 173 45.3 163.8 47.7C154.7 50 145.3 54 136.2 55C127 56 118 54 109 54.3C100 54.7 91 57.3 82 55C73 52.7 64 45.3 54.8 46C45.7 46.7 36.3 55.3 27.2 56.2C18 57 9 50 4.5 46.5L0 43Z"
+              fill="#4575ea"
+            ></path>
+            <path
+              d="M0 67L4.5 70C9 73 18 79 27.2 79.3C36.3 79.7 45.7 74.3 54.8 74.5C64 74.7 73 80.3 82 83.2C91 86 100 86 109 84.7C118 83.3 127 80.7 136.2 79C145.3 77.3 154.7 76.7 163.8 75.7C173 74.7 182 73.3 191 76.7C200 80 209 88 218 88.5C227 89 236 82 245.2 80C254.3 78 263.7 81 272.8 82.7C282 84.3 291 84.7 295.5 84.8L300 85L300 68L295.5 68.5C291 69 282 70 272.8 69.5C263.7 69 254.3 67 245.2 68C236 69 227 73 218 71.8C209 70.7 200 64.3 191 60.8C182 57.3 173 56.7 163.8 58.3C154.7 60 145.3 64 136.2 66.3C127 68.7 118 69.3 109 70.7C100 72 91 74 82 72C73 70 64 64 54.8 63.7C45.7 63.3 36.3 68.7 27.2 67.8C18 67 9 60 4.5 56.5L0 53Z"
+              fill="#4c82ff"
+            ></path>
+            <path
+              d="M0 121L4.5 119C9 117 18 113 27.2 111C36.3 109 45.7 109 54.8 109.3C64 109.7 73 110.3 82 111.3C91 112.3 100 113.7 109 112.2C118 110.7 127 106.3 136.2 106.7C145.3 107 154.7 112 163.8 114C173 116 182 115 191 116.5C200 118 209 122 218 121.5C227 121 236 116 245.2 116C254.3 116 263.7 121 272.8 122.7C282 124.3 291 122.7 295.5 121.8L300 121L300 83L295.5 82.8C291 82.7 282 82.3 272.8 80.7C263.7 79 254.3 76 245.2 78C236 80 227 87 218 86.5C209 86 200 78 191 74.7C182 71.3 173 72.7 163.8 73.7C154.7 74.7 145.3 75.3 136.2 77C127 78.7 118 81.3 109 82.7C100 84 91 84 82 81.2C73 78.3 64 72.7 54.8 72.5C45.7 72.3 36.3 77.7 27.2 77.3C18 77 9 71 4.5 68L0 65Z"
+              fill="#618fff"
+            ></path>
+            <path
+              d="M0 141L4.5 139.2C9 137.3 18 133.7 27.2 132.7C36.3 131.7 45.7 133.3 54.8 134.8C64 136.3 73 137.7 82 137.8C91 138 100 137 109 136.5C118 136 127 136 136.2 136.5C145.3 137 154.7 138 163.8 137.8C173 137.7 182 136.3 191 136.3C200 136.3 209 137.7 218 137.8C227 138 236 137 245.2 137.5C254.3 138 263.7 140 272.8 139.8C282 139.7 291 137.3 295.5 136.2L300 135L300 119L295.5 119.8C291 120.7 282 122.3 272.8 120.7C263.7 119 254.3 114 245.2 114C236 114 227 119 218 119.5C209 120 200 116 191 114.5C182 113 173 114 163.8 112C154.7 110 145.3 105 136.2 104.7C127 104.3 118 108.7 109 110.2C100 111.7 91 110.3 82 109.3C73 108.3 64 107.7 54.8 107.3C45.7 107 36.3 107 27.2 109C18 111 9 115 4.5 117L0 119Z"
+              fill="#759cff"
+            ></path>
+            <path
+              d="M0 151L4.5 151C9 151 18 151 27.2 151C36.3 151 45.7 151 54.8 151C64 151 73 151 82 151C91 151 100 151 109 151C118 151 127 151 136.2 151C145.3 151 154.7 151 163.8 151C173 151 182 151 191 151C200 151 209 151 218 151C227 151 236 151 245.2 151C254.3 151 263.7 151 272.8 151C282 151 291 151 295.5 151L300 151L300 133L295.5 134.2C291 135.3 282 137.7 272.8 137.8C263.7 138 254.3 136 245.2 135.5C236 135 227 136 218 135.8C209 135.7 200 134.3 191 134.3C182 134.3 173 135.7 163.8 135.8C154.7 136 145.3 135 136.2 134.5C127 134 118 134 109 134.5C100 135 91 136 82 135.8C73 135.7 64 134.3 54.8 132.8C45.7 131.3 36.3 129.7 27.2 130.7C18 131.7 9 135.3 4.5 137.2L0 139Z"
+              fill="#87a9ff"
+            ></path>
+          </svg>
+          <div class="layer-item er"><h4>Enfermedad Respiratoria</h4></div>
+        </div>
+      </aside>
+      <aside class="container-main-predict">
+        <i class="fa-solid fa-gear" style="color: #1a1920"></i>
+        <div id="message-warning" class="show-message">
+          <p>Edad no valida</p>
+        </div>
+        <div id="spinner-container" class="hide">
+          <div class="custom-loader"></div>
+        </div>
+        <div id="questions-container" class="hide">
+          <div id="questions">
+            <form action="#" id="form-questions">
+              <div class="question" id="edad-input">
+                <label for="edad">¿Cual es tu edad?</label>
+                <input
+                  type="number"
+                  id="edad"
+                  class="text-input edad-input-txt"
+                  min="18"
+                  max="100"
+                />
+              </div>
+              <div class="question hide-question">
+                <label for="inputState">¿Cual es tu sexo?</label>
+                <select id="inputState" class="input-select 2_i">
+                  <option value="0" selected>Mujer</option>
+                  <option value="1">Hombre</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState">Estado Civil</label>
+                <select id="inputState" class="input-select 3_i">
+                  <option value="1" selected>Soltero</option>
+                  <option value="2">Casado</option>
+                  <option value="3">Divorciado</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState">Ocupación</label>
+                <select id="inputState" class="input-select 4_i">
+                  <option value="0" selected>Estudiante</option>
+                  <option value="1">Empleado</option>
+                  <option value="2">Ama de casa</option>
+                  <option value="3">Enfermera</option>
+                  <option value="4">Campesino</option>
+                  <option value="5">Medico</option>
+                  <option value="6">Ingeniero</option>
+                  <option value="7">Albañil</option>
+                  <option value="8">Docente</option>
+                  <option value="9">Administrativo</option>
+                  <option value="10">Chofer u operador</option>
+                  <option value="11">Guardia</option>
+                  <option value="12">Desempleado</option>
+                  <option value="13">Mecanico</option>
+                  <option value="14">Estilista</option>
+                  <option value="15">Veterinario</option>
+                  <option value="16">Comerciante</option>
+                  <option value="17">Carpintero</option>
+                  <option value="18">Abogado</option>
+                  <option value="19">Quimico</option>
+                  <option value="20">Diseñador grafico</option>
+                  <option value="21">Arquitecto</option>
+                  <option value="22">Psicologo</option>
+                  <option value="23">Petrolero</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >Tiempo de residencia en su domicilio actual</label
+                >
+                <select id="inputState" class="input-select 5_i">
+                  <option value="0" selected>Mas de 5 años</option>
+                  <option value="1">Toda su vida</option>
+                  <option value="2">Otro</option>
+                  <option value="3">Mas de 2 años</option>
+                  <option value="4">1 año</option>
+                  <option value="5">Menos de un año</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >¿Se enferma seguido de las vias respiratorias?</label
+                >
+                <select id="inputState" class="input-select 6_i">
+                  <option value="0" selected>No</option>
+                  <option value="1">Si</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState">¿A que lo atribuye?</label>
+                <select id="inputState" class="input-select 7_i">
+                  <option value="0" selected>
+                    A los cambios de temperatura
+                  </option>
+                  <option value="1">A la contaminación</option>
+                  <option value="2">A las alergias</option>
+                  <option value="3">No se enferma frecuentemente</option>
+                  <option value="4">Mala alimentacion</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState">¿Cuantas vacuna covid se puso?</label>
+                <select id="inputState" class="input-select 8_i">
+                  <option value="0" selected>1,2 y refuerzo</option>
+                  <option value="1">1 y 2 dosis</option>
+                  <option value="2">No se vacuno</option>
+                  <option value="3">1 dosis</option>
+                  <option value="4">Cansino</option>
+                  <option value="5">Moderna</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >¿Usted o alguien cercano padecio covid?</label
+                >
+                <select id="inputState" class="input-select 9_i">
+                  <option value="0" selected>No</option>
+                  <option value="1">Si</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >En caso de que si, ¿Requirio hospitalización?</label
+                >
+                <select id="inputState" class="input-select 10_i">
+                  <option value="0" selected>No</option>
+                  <option value="1">Si</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >En casa ¿Cocinan o cocinaron con leña?</label
+                >
+                <select id="inputState" class="input-select 11_i">
+                  <option value="0" selected>No</option>
+                  <option value="1">Si</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState">En casa ¿Alguien o usted fuma?</label>
+                <select id="inputState" class="input-select 12_i">
+                  <option value="0" selected>Alguien de la familia</option>
+                  <option value="1">No</option>
+                  <option value="2">Yo</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >En su familia, ¿Hay alguien con una enfermedad
+                  cronica?</label
+                >
+                <select id="inputState" class="input-select 13_i">
+                  <option value="0" selected>Ninguna</option>
+                  <option value="1">Cancer</option>
+                  <option value="2">Diabetes Mellitus</option>
+                  <option value="3">Enfermedad Cardiaca</option>
+                  <option value="4">Hipertensión arterial</option>
+                  <option value="5">EPOC</option>
+                  <option value="6">Osteoporosis</option>
+                  <option value="7">Anemia</option>
+                  <option value="8">Asma</option>
+                  <option value="9">IRC</option>
+                  <option value="10">Neumonia</option>
+                  <option value="11">Enfermedad de la piel</option>
+                  <option value="12">Bronquitis</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState">Origen del agua para beber</label>
+                <select id="inputState" class="input-select 14_i">
+                  <option value="0" selected>Embotelladora local</option>
+                  <option value="1">Embotelladora de marca</option>
+                  <option value="2">De la llave</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState">Origen del agua para cocinar</label>
+                <select id="inputState" class="input-select 15_i">
+                  <option value="0" selected>Embotelladora local</option>
+                  <option value="1">Embotelladora de marca</option>
+                  <option value="2">De la llave</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >Alguien con algun padecimiento en relacion al agua</label
+                >
+                <select id="inputState" class="input-select 16_i">
+                  <option value="0" selected>Ninguna</option>
+                  <option value="1">Piedras en riñon</option>
+                  <option value="2">Insuficiencia renal</option>
+                  <option value="3">Cancer de riñon</option>
+                  <option value="4">Irritación de mucosas</option>
+                  <option value="5">Quistes renales</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >Considera su vida estresante tanto que lo ha afectado
+                  laboral, social y personal</label
+                >
+                <select id="inputState" class="input-select 17_i">
+                  <option value="0" selected>No</option>
+                  <option value="1">Si</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >¿Siente ansiedad o nerviosismo asi como deseos de comer todo
+                  el tiempo?</label
+                >
+                <select id="inputState" class="input-select 18_i">
+                  <option value="0" selected>No</option>
+                  <option value="1">Si</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState">¿Como considera su autoestima?</label>
+                <select id="inputState" class="input-select 19_i">
+                  <option value="0" selected>Baja</option>
+                  <option value="1">Media</option>
+                  <option value="2">Alta</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >En los ultimos 6 meses ha perdido interes en actividades que
+                  consideraba agradables</label
+                >
+                <select id="inputState" class="input-select 20_i">
+                  <option value="0" selected>No</option>
+                  <option value="1">Si</option>
+                  <option value="2">No se habia puesto a pensar en eso</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >¿Se ha sentido cansado mas de lo normal incluso sin hacer
+                  actividad fisica que no puede dormir?</label
+                >
+                <select id="inputState" class="input-select 21_i">
+                  <option value="0" selected>No</option>
+                  <option value="1">Si</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >¿Su estado de animo cambia repentinamente?</label
+                >
+                <select id="inputState" class="input-select 22_i">
+                  <option value="0" selected>No</option>
+                  <option value="1">Si</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="buttons">
+            <button id="btn" class="hide-question">Siguiente</button>
+            <button id="btn-analizar" class="hide-question">Analizar</button>
+          </div>
+        </div>
+        <!--<div class="results"></div>-->
+      </aside>
+    </main>
+    <div id="modal" class="hide-results">
+      <div id="results">
+        <div id="details">
+          <img
+            src="./assets/diabetes.png"
+            alt="diabetes"
+            width="100%"
+            height="30%"
+          />
+          <p>Positivo</p>
+        </div>
+        <button id="btn-reiniciar">Reiniciar</button>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/eee10799b3.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="indice.js"></script>
+  <script src="questions.js"></script>
+  <script src="container-predict.js"></script>
+</html>
