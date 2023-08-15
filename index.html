@@ -159,7 +159,7 @@
           <div id="questions">
             <form action="#" id="form-questions">
               <div class="question" id="edad-input">
-                <label for="edad">¿Cual es tu edad?</label>
+                <label for="edad">Edad</label>
                 <input
                   type="number"
                   id="edad"
@@ -169,7 +169,7 @@
                 />
               </div>
               <div class="question hide-question">
-                <label for="inputState">¿Cual es tu sexo?</label>
+                <label for="inputState">Género</label>
                 <select id="inputState" class="input-select 2_i">
                   <option value="0" selected>Mujer</option>
                   <option value="1">Hombre</option>
@@ -237,17 +237,17 @@
               <div class="question hide-question">
                 <label for="inputState">¿A que lo atribuye?</label>
                 <select id="inputState" class="input-select 7_i">
-                  <option value="0" selected>
-                    A los cambios de temperatura
-                  </option>
+                  <option value="0">A los cambios de temperatura</option>
                   <option value="1">A la contaminación</option>
                   <option value="2">A las alergias</option>
-                  <option value="3">No se enferma frecuentemente</option>
+                  <option value="3" selected>
+                    No se enferma frecuentemente
+                  </option>
                   <option value="4">Mala alimentacion</option>
                 </select>
               </div>
               <div class="question hide-question">
-                <label for="inputState">¿Cuantas vacuna covid se puso?</label>
+                <label for="inputState">¿Cuantas vacunas covid se puso?</label>
                 <select id="inputState" class="input-select 8_i">
                   <option value="0" selected>1,2 y refuerzo</option>
                   <option value="1">1 y 2 dosis</option>
@@ -259,7 +259,7 @@
               </div>
               <div class="question hide-question">
                 <label for="inputState"
-                  >¿Usted o alguien cercano padecio covid?</label
+                  >¿Usted o alguien cercano padeció covid?</label
                 >
                 <select id="inputState" class="input-select 9_i">
                   <option value="0" selected>No</option>
@@ -267,9 +267,7 @@
                 </select>
               </div>
               <div class="question hide-question">
-                <label for="inputState"
-                  >En caso de que si, ¿Requirio hospitalización?</label
-                >
+                <label for="inputState">¿Requirio hospitalización?</label>
                 <select id="inputState" class="input-select 10_i">
                   <option value="0" selected>No</option>
                   <option value="1">Si</option>
@@ -277,7 +275,7 @@
               </div>
               <div class="question hide-question">
                 <label for="inputState"
-                  >En casa ¿Cocinan o cocinaron con leña?</label
+                  >En casa ¿Cocinan o cocinarón con leña?</label
                 >
                 <select id="inputState" class="input-select 11_i">
                   <option value="0" selected>No</option>
@@ -307,14 +305,16 @@
                   <option value="6">Osteoporosis</option>
                   <option value="7">Anemia</option>
                   <option value="8">Asma</option>
-                  <option value="9">IRC</option>
+                  <option value="9">Insuficiencia Renal Crónica</option>
                   <option value="10">Neumonia</option>
                   <option value="11">Enfermedad de la piel</option>
                   <option value="12">Bronquitis</option>
                 </select>
               </div>
               <div class="question hide-question">
-                <label for="inputState">Origen del agua para beber</label>
+                <label for="inputState"
+                  >¿Cual es el origen del agua que sueles beber?</label
+                >
                 <select id="inputState" class="input-select 14_i">
                   <option value="0" selected>Embotelladora local</option>
                   <option value="1">Embotelladora de marca</option>
@@ -322,7 +322,7 @@
                 </select>
               </div>
               <div class="question hide-question">
-                <label for="inputState">Origen del agua para cocinar</label>
+                <label for="inputState">¿Origen del agua para cocinar?</label>
                 <select id="inputState" class="input-select 15_i">
                   <option value="0" selected>Embotelladora local</option>
                   <option value="1">Embotelladora de marca</option>
@@ -331,7 +331,8 @@
               </div>
               <div class="question hide-question">
                 <label for="inputState"
-                  >Alguien con algun padecimiento en relacion al agua</label
+                  >Dentro de tu familiar hay alguien con algun padecimiento en
+                  relacion al agua</label
                 >
                 <select id="inputState" class="input-select 16_i">
                   <option value="0" selected>Ninguna</option>
@@ -344,8 +345,8 @@
               </div>
               <div class="question hide-question">
                 <label for="inputState"
-                  >Considera su vida estresante tanto que lo ha afectado
-                  laboral, social y personal</label
+                  >¿Considera su vida estresante tanto que lo ha afectado
+                  laboral, social y personal?</label
                 >
                 <select id="inputState" class="input-select 17_i">
                   <option value="0" selected>No</option>
@@ -354,8 +355,8 @@
               </div>
               <div class="question hide-question">
                 <label for="inputState"
-                  >¿Siente ansiedad o nerviosismo asi como deseos de comer todo
-                  el tiempo?</label
+                  >¿Siente ansiedad o nerviosismo o deseos de comer todo el
+                  tiempo?</label
                 >
                 <select id="inputState" class="input-select 18_i">
                   <option value="0" selected>No</option>
@@ -372,8 +373,8 @@
               </div>
               <div class="question hide-question">
                 <label for="inputState"
-                  >En los ultimos 6 meses ha perdido interes en actividades que
-                  consideraba agradables</label
+                  >En los ultimos 6 meses ¿Ha perdido interes en actividades que
+                  consideraba agradables?</label
                 >
                 <select id="inputState" class="input-select 20_i">
                   <option value="0" selected>No</option>
@@ -383,8 +384,8 @@
               </div>
               <div class="question hide-question">
                 <label for="inputState"
-                  >¿Se ha sentido cansado mas de lo normal incluso sin hacer
-                  actividad fisica que no puede dormir?</label
+                  >¿Se ha sentido cansado mas de lo normal incluso sin haber
+                  hecho actividad fisica o que no pueda dormir?</label
                 >
                 <select id="inputState" class="input-select 21_i">
                   <option value="0" selected>No</option>
@@ -396,6 +397,15 @@
                   >¿Su estado de animo cambia repentinamente?</label
                 >
                 <select id="inputState" class="input-select 22_i">
+                  <option value="0" selected>No</option>
+                  <option value="1">Si</option>
+                </select>
+              </div>
+              <div class="question hide-question">
+                <label for="inputState"
+                  >¿Padece alguna otra enfermedad crónica que no sea
+                </label>
+                <select id="inputState" class="input-select 23_i">
                   <option value="0" selected>No</option>
                   <option value="1">Si</option>
                 </select>
@@ -429,6 +439,7 @@
     src="https://kit.fontawesome.com/eee10799b3.js"
     crossorigin="anonymous"
   ></script>
+  <script src="control-flujo-questions.js"></script>
   <script src="indice.js"></script>
   <script src="questions.js"></script>
   <script src="container-predict.js"></script>

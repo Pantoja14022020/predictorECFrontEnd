@@ -40,16 +40,18 @@ btn.addEventListener('click',e=>{
         return;
     }
 
-    if(activo != 20){//21
+    if(activo != 21){//20
         for(let i = 0; i < questionsContainer.length; i++){
             if(!questionsContainer[i].classList.contains('hide-question')){
                 activo = i;
             }
         } 
         questionsContainer[activo].classList.add('hide-question')
-        questionsContainer[activo+1].classList.remove('hide-question') 
+        activo = controlarFlujo(activo);
+        questionsContainer[activo+1].classList.remove('hide-question')
+        
     }
-    if(activo==20){//21
+    if(activo==21){//20
         btn.classList.add('hide-question')
         btnAnalizar.classList.remove('hide-question')       
     }
@@ -86,6 +88,7 @@ btnAnalizar.addEventListener('click',e=>{
     const i20 = parseInt(document.getElementsByClassName("20_i")[0].value);
     const i21 = parseInt(document.getElementsByClassName("21_i")[0].value);
     const i22 = parseInt(document.getElementsByClassName("22_i")[0].value);
+    const i23 = parseInt(document.getElementsByClassName("23_i")[0].value);
 
     let entradas = {
         "edad": i1,
@@ -110,6 +113,7 @@ btnAnalizar.addEventListener('click',e=>{
         "hpisa": i20,
         "scmn": i21,
         "seacr": i22,
+        "paecda": i23,
     }
 
     let queUrl = "";
@@ -134,7 +138,8 @@ btnAnalizar.addEventListener('click',e=>{
 
     //convertimos a string el json que contienen las entradas
     entradas = JSON.stringify(entradas)
-
+    console.log(entradas)
+    
     $.ajax({
         url: queUrl,
         type: 'POST',
@@ -163,58 +168,6 @@ btnAnalizar.addEventListener('click',e=>{
         }
       });
 
-    /*
-    async function postData(url, data) {
-        const response = await fetch(url, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        });
-        return response.json();
-    }
-
-    postData("http://127.0.0.1:5000/predecir", entradas)
-        .then( datos => {
-
-            let clase_predicha = datos.clase_predicha
-            let resultados = datos.resultados
-
-            const ctx = document.getElementById('myChart');
-
-            const data = {
-                labels: ["Ninguna", "Diabetes", "Hipertensión Arterial", "Enfermedad Respiratoria"],
-                datasets: [
-                {
-                    data: [(resultados[0]*100).toFixed(2), (resultados[1]*100).toFixed(2), (resultados[2]*100).toFixed(2), (resultados[3]*100).toFixed(2)],
-                    backgroundColor: ["#ff6384", "#36a2eb", "#ffce56", "#4bc0c0"],
-                },
-                ],
-            };
-
-            const options = {
-                responsive: true,
-                maintainAspectRatio: false,
-                legend: {
-                position: "bottom",
-                labels: {
-                    fontColor: "#333",
-                    fontSize: 14,
-                    boxWidth: 15,
-                    usePointStyle: true,
-                },
-                },
-            };
-            
-            new Chart(ctx, {
-                type: "pie",
-                data: data,
-                options: options,
-            });
-
-        })
-        .catch(error => console.error(error));*/
 })
 
 
